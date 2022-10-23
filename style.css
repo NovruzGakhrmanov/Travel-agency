@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 @import url(style.css);
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap");
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   outline: none;
   border: none;
@@ -12,7 +13,7 @@
 }
 
 html {
-  font-size: 63.5%;
+  font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
@@ -25,6 +26,7 @@ html::-webkit-scrollbar-track {
 }
 html::-webkit-scrollbar-thumb {
   background: #29d9d5;
+  border-radius: 5rem;
 }
 
 body {
@@ -47,14 +49,13 @@ section {
 .heading h1 {
   font-size: 4rem;
   color: #fff;
-  margin-top: 0.5rem;
 }
 
 .btn {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 3rem;
-  font-size: 1rem;
+  font-size: 1.7rem;
   color: #29d9d5;
   border: 0.2rem solid #29d9d5;
   border-radius: 5rem;
@@ -63,7 +64,7 @@ section {
 }
 .btn:hover {
   background: #29d9d5;
-  color: rgba(17, 17, 17, 0.7);
+  color: #111;
 }
 
 .header {
@@ -76,10 +77,10 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.3rem 9%;
+  padding: 1.5rem 9%;
 }
 .header .navbar a {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: #aaa;
   display: inline-block;
   margin: 0 1rem;
@@ -102,7 +103,7 @@ section {
 }
 
 #menu-btn {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
   cursor: pointer;
   display: none;
@@ -113,11 +114,11 @@ section {
   margin-top: 9rem;
   width: 90%;
   border-radius: 1rem;
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(images/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  min-height: 85vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -158,35 +159,35 @@ section {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 .book-form form .inputBox {
-  flex: 1 1 0.5rem;
+  flex: 1 1 25rem;
 }
-.book-form form span {
-  font-size: 1rem;
+.book-form form .inputBox span {
+  font-size: 1.4rem;
   color: #aaa;
 }
-.book-form form input {
-  width: 100;
-  padding: 1.2rem 1rem;
+.book-form form .inputBox input {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
   border-radius: 5rem;
   border: 0.2rem solid #29d9d5;
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #aaa;
   text-transform: none;
   background: none;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 .book-form form .btn {
-  flex: 1 1 0.5rem;
+  flex: 1 1 15rem;
 }
 
 .about {
   display: flex;
   align-items: center;
-  justify-content: wrap;
-  gap: 1.6rem;
+  flex-wrap: wrap;
+  gap: 2rem;
   margin-top: 5rem;
 }
 .about .video-container {
@@ -207,7 +208,7 @@ section {
   border-radius: 50%;
   background: #fff;
   cursor: pointer;
-  margin: 0.5rem;
+  margin: 0.7rem;
 }
 .about .video-container .controls span:hover {
   background: #29d9d5;
@@ -223,7 +224,7 @@ section {
 .about .content h3 {
   color: #fff;
   font-size: 4rem;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
 }
 .about .content p {
   padding: 1rem 0;
@@ -234,8 +235,8 @@ section {
 
 .destination .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27rem, 2fr));
-  gap: 1.3rem;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
 }
 .destination .box-container .box {
   border-radius: 1rem;
@@ -256,40 +257,36 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.destination .box-container .box .cont {
+.destination .box-container .box .content {
   padding: 2rem;
   text-align: center;
 }
-.destination .box-container .box .cont h3 {
+.destination .box-container .box .content h3 {
   font-size: 2rem;
   color: #fff;
 }
-.destination .box-container .box .cont p {
+.destination .box-container .box .content p {
   padding: 1rem 0;
   font-size: 1.4rem;
   color: #aaa;
   line-height: 2;
 }
-.destination .box-container .box .cont a {
+.destination .box-container .box .content a {
   font-size: 1.7rem;
   color: #29d9d5;
 }
-.destination .box-container .box .cont:hover i {
+.destination .box-container .box .content a:hover i {
   padding-left: 1rem;
-  color: #fff;
 }
-.destination .box-container .box .cont i {
+.destination .box-container .box .content a i {
   padding-right: 0.5rem;
 }
 
 .services .box-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(32rem, 1fr) [auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
-
 .services .box-container .box {
   background: #222;
   border-radius: 1rem;
@@ -297,22 +294,18 @@ section {
   text-align: center;
   border: 0.2rem solid #111;
 }
-
 .services .box-container .box:hover {
   border: 0.2rem solid #29d9d5;
 }
-
 .services .box-container .box i {
   font-size: 4rem;
   color: #29d9d5;
   margin-bottom: 2rem;
 }
-
 .services .box-container .box h3 {
   font-size: 2rem;
   color: #fff;
 }
-
 .services .box-container .box p {
   padding: 1rem 0;
   font-size: 1.4rem;
@@ -346,12 +339,243 @@ section {
   color: #fff;
 }
 
+.review {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.review .content {
+  flex: 1 1 42rem;
+}
+.review .content span {
+  font-size: 2rem;
+  color: #29d9d5;
+}
+.review .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.review .content p {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.review .box-container {
+  flex: 1 1 42rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.review .box-container .box {
+  flex: 1 1 20rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: #222;
+  border: 0.2rem solid #111;
+}
+.review .box-container .box:hover {
+  border: 0.2rem solid #29d9d5;
+}
+.review .box-container .box p {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  line-height: 2;
+  color: #aaa;
+}
+.review .box-container .box .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.review .box-container .box .user img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.review .box-container .box .user h3 {
+  font-size: 1.7rem;
+  color: #fff;
+}
+.review .box-container .box .user span {
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .box-container .box {
+  border-radius: 1rem;
+  background: #222;
+  overflow: hidden;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+.blogs .box-container .box .content .link {
+  font-size: 2rem;
+  color: #fff;
+}
+.blogs .box-container .box .content .link:hover {
+  color: #29d9d5;
+}
+.blogs .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+.blogs .box-container .box .content .icon {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blogs .box-container .box .content .icon a {
+  font-size: 1.4rem;
+  color: #aaa;
+}
+.blogs .box-container .box .content .icon a:hover {
+  color: #29d9d5;
+}
+.blogs .box-container .box .content .icon a i {
+  padding-right: 0.5rem;
+  color: #29d9d5;
+}
+
+.banner {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../images/banner-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  background-attachment: fixed;
+  text-align: center;
+}
+.banner .content span {
+  font-size: 2rem;
+  color: #29d9d5;
+}
+.banner .content h3 {
+  font-size: 4rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+.banner .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.footer .box-container .box {
+  padding: 1rem 0;
+}
+.footer .box-container .box .logo {
+  padding-bottom: 1rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+.footer .box-container .box p {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  line-height: 2;
+}
+.footer .box-container .box p i {
+  padding-right: 0.5rem;
+  color: #29d9d5;
+}
+.footer .box-container .box .share {
+  padding-top: 1rem;
+}
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  border: 0.2rem solid #29d9d5;
+  color: #29d9d5;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+.footer .box-container .box .share a:hover {
+  background: #29d9d5;
+  color: #111;
+}
+.footer .box-container .box .links {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  display: block;
+}
+.footer .box-container .box .links:hover {
+  color: #29d9d5;
+}
+.footer .box-container .box .links:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box .links i {
+  padding-right: 0.5rem;
+  color: #29d9d5;
+}
+.footer .box-container .box form .email {
+  width: 100%;
+  border-radius: 5rem;
+  border: 0.2rem solid #29d9d5;
+  background: none;
+  font-size: 1.5rem;
+  text-transform: none;
+  color: #aaa;
+  margin-bottom: 1rem;
+  padding: 1.2rem 1.4rem;
+}
+
+.credit {
+  background: #222;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  color: #aaa;
+}
+.credit span {
+  color: #29d9d5;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   .header {
-    padding: 1.3rem 2rem;
+    padding: 1.5rem 2rem;
   }
   section {
     padding: 3rem 2rem;
@@ -379,22 +603,24 @@ section {
     font-size: 2rem;
     display: block;
   }
+  .home {
+    margin-top: 10rem;
+  }
+  .home .content span {
+    font-size: 8vw;
+  }
+  .home .content h3 {
+    font-size: 9vw;
+  }
 }
-.home {
-  margin-top: 10rem;
-}
-.home .content .span {
-  font-size: 8vw;
-}
-.home .content h3 {
-  font-size: 7vw;
-}
-
 @media (max-width: 450px) {
   html {
     font-size: 50%;
   }
   .about .content h3 {
     font-size: 3.5rem;
+  }
+  .banner .content h3 {
+    font-size: 2.7rem;
   }
 }/*# sourceMappingURL=style.css.map */
